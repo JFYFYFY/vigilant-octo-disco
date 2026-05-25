@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>学校概况 - 江苏师范大学</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <!-- 顶部导航栏 -->
+    <header class="main-header">
+      <div class="header-container">
+        <!-- Logo区域 -->
+        <div class="logo-section">
+          <img
+            src="../images/logo.png"
+            alt="江苏师范大学校徽"
+            onerror="
+              this.style.background = 'linear-gradient(135deg,#0d47a1,#1565c0)';
+              this.style.display = 'flex';
+              this.style.alignItems = 'center';
+              this.style.justifyContent = 'center';
+              this.style.color = 'white';
+              this.style.fontSize = '20px';
+              this.textContent = '苏师大';
+            "
+          />
+          <div>
+            <h1 class="university-name">江苏师范大学</h1>
+            <p class="university-name-en">Jiangsu Normal University</p>
+          </div>
+        </div>
+
+        <!-- 导航菜单 -->
+        <nav class="main-nav">
+          <ul>
+            <li><a href="../index.html">首页</a></li>
+            <li><a href="about.html" class="active">学校概况</a></li>
+            <li><a href="motto.html">校训解读</a></li>
+            <li><a href="history.html">校史沿革</a></li>
+            <li><a href="admissions.html">招生信息</a></li>
+            <li><a href="news.html">新闻通知</a></li>
+            <li><a href="campus.html">校园风光</a></li>
+            <li><a href="contact.html">联系我们</a></li>
+          </ul>
+        </nav>
+
+        <!-- 当前时间 -->
+        <div class="current-time"></div>
+      </div>
+    </header>
+
+    <!-- 主内容 -->
+    <div class="container">
+      <!-- 学校简介 -->
+      <section>
+        <h2>学校简介</h2>
+        <article>
+          <p>
+            江苏师范大学是江苏省<mark>人民政府与教育部共建</mark>高校，是江苏省<mark>重点大学</mark>、<mark>国家"中西部高校基础能力建设工程"高校</mark>。学校坐落于江苏省徐州市，现有泉山、云龙、奎园、贾汪四个校区，占地面积2457亩。
+          </p>
+          <p>
+            学校创建于1952年，历经<mark>徐州师范专科学校</mark>、<mark>徐州师范学院</mark>、<mark>徐州师范大学</mark>等历史时期，2012年更名为江苏师范大学。经过70多年的发展，学校已成为以教师教育为特色、以培养各类应用型人才为目标的多科性大学。
+          </p>
+        </article>
+      </section>
+
+      <!-- 基本信息 -->
+      <section class="mt-20">
+        <h2>基本信息</h2>
+        <div class="grid-2">
+          <aside>
+            <h3>学校数据</h3>
+            <table>
+              <tbody id="schoolData">
+                <!-- JS动态生成 -->
+              </tbody>
+            </table>
+          </aside>
+          <aside>
+            <h3>学科设置</h3>
+            <ul id="disciplineList">
+              <!-- JS动态生成 -->
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <!-- 办学定位 -->
+      <section class="mt-20">
+        <h2>办学定位与特色</h2>
+        <div class="grid-3">
+          <article class="card text-center">
+            <div style="font-size: 48px; margin-bottom: 15px">🎓</div>
+            <h3>师范特色</h3>
+            <p>深耕教师教育70余年，培养优秀教师和教育管理者</p>
+          </article>
+          <article class="card text-center">
+            <div style="font-size: 48px; margin-bottom: 15px">🔬</div>
+            <h3>科研实力</h3>
+            <p>拥有多个省级重点实验室和人文社科研究基地</p>
+          </article>
+          <article class="card text-center">
+            <div style="font-size: 48px; margin-bottom: 15px">🌍</div>
+            <h3>国际视野</h3>
+            <p>与100余所国外高校建立合作关系</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- 师资队伍 -->
+      <section class="mt-20">
+        <h2>师资队伍</h2>
+        <article>
+          <p>
+            学校现有专任教师<mark>1500余人</mark>，其中具有博士学位的教师占比超过60%。师资队伍中包括：
+          </p>
+          <ul>
+            <li>国家级人才工程项目入选者 <mark>20余人</mark></li>
+            <li>省部级人才工程项目入选者 <mark>100余人</mark></li>
+            <li>享受国务院政府特殊津贴专家 <mark>30余人</mark></li>
+            <li>全国优秀教师、省教学名师等 <mark>50余人</mark></li>
+          </ul>
+        </article>
+
+        <table class="mt-20">
+          <thead>
+            <tr>
+              <th>职称类别</th>
+              <th>人数</th>
+              <th>占比</th>
+            </tr>
+          </thead>
+          <tbody id="facultyTable">
+            <!-- JS动态生成 -->
+          </tbody>
+        </table>
+      </section>
+
+      <!-- 学科建设 -->
+      <section class="mt-20">
+        <h2>学科建设</h2>
+        <article>
+          <p>
+            学校学科涵盖<mark>哲学、经济学、法学、教育学、文学、历史学、理学、工学、农学、管理学、艺术学</mark>等11大学科门类。现有：
+          </p>
+          <ul>
+            <li><mark>35个</mark>一级学科硕士点</li>
+            <li><mark>1个</mark>专业博士学位授权点</li>
+            <li><mark>2个</mark>ESI全球前1%学科</li>
+            <li><mark>10个</mark>省级重点学科</li>
+          </ul>
+        </article>
+
+        <details open>
+          <summary>省级重点学科</summary>
+          <ul>
+            <li>教育学（国家重点培育学科）</li>
+            <li>数学</li>
+            <li>物理学</li>
+            <li>化学</li>
+            <li>生物学</li>
+          </ul>
+        </details>
+
+        <details>
+          <summary>本科专业设置</summary>
+          <p>
+            学校现有本科专业<mark>68个</mark>，其中国家级特色专业建设点8个，省级品牌专业20个。
+          </p>
+        </details>
+      </section>
+
+      <!-- 人才培养 -->
+      <section class="mt-20">
+        <h2>人才培养</h2>
+        <div class="grid-2">
+          <article class="card">
+            <h3>培养模式</h3>
+            <p>
+              学校坚持<mark>厚基础、宽口径、强能力、高素质</mark>的人才培养模式，注重学生创新精神和实践能力培养。
+            </p>
+            <ul>
+              <li>推行学分制改革</li>
+              <li>实施导师制</li>
+              <li>开设创新创业课程</li>
+              <li>建立实践教学体系</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>就业情况</h3>
+            <p>毕业生就业率保持在<mark>95%以上</mark>，就业质量稳步提升。</p>
+            <ul>
+              <li>教育系统就业占比约40%</li>
+              <li>考取公务员、事业单位约15%</li>
+              <li>企业就业约35%</li>
+              <li>升学深造约10%</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- 合作交流 -->
+      <section class="mt-20">
+        <h2>国际交流与合作</h2>
+        <article>
+          <p>
+            学校积极推进<mark>国际化办学</mark>，与美国、加拿大、英国、法国、澳大利亚、日本、韩国等国家和地区的<mark>100余所高校</mark>建立合作关系。开展多种形式的合作项目：
+          </p>
+          <ul>
+            <li>学生交换项目</li>
+            <li>联合培养博士、硕士研究生</li>
+            <li>合作举办学术会议</li>
+            <li>教师互访访学</li>
+          </ul>
+        </article>
+      </section>
+    </div>
+
+    <!-- 页脚 -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>联系方式</h4>
+          <p>地址：江苏省徐州市铜山新区上海路101号</p>
+          <p>电话：0516-83403510</p>
+          <p>邮箱：xznu@jsnu.edu.cn</p>
+        </div>
+        <div class="footer-section">
+          <h4>快速链接</h4>
+          <ul style="list-style: none; padding: 0">
+            <li><a href="about.html">学校概况</a></li>
+            <li><a href="admissions.html">招生信息</a></li>
+            <li><a href="contact.html">联系我们</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>关注我们</h4>
+          <p>微信公众号：江苏师范大学</p>
+          <p>微博：@江苏师范大学</p>
+        </div>
+        <div class="footer-section">
+          <h4>版权信息</h4>
+          <p>© 2024 @ jfy 所有</p>
+          <p>苏ICP备：XXXXXXXX号</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>崇德厚学 · 励志敏行 | 感谢您的访问</p>
+      </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // 学校数据
+        const schoolData = [
+          { label: "占地面积", value: "2457亩" },
+          { label: "校舍面积", value: "92万平方米" },
+          { label: "图书馆藏", value: "280万册" },
+          { label: "在校学生", value: "20000余人" },
+          { label: "专任教师", value: "1500余人" },
+          { label: "本科专业", value: "68个" },
+        ];
+
+        const dataTable = document.getElementById("schoolData");
+        if (dataTable) {
+          let html = "";
+          for (let i = 0; i < schoolData.length; i++) {
+            const item = schoolData[i];
+            html +=
+              "<tr><td><strong>" +
+              item.label +
+              "</strong></td><td>" +
+              item.value +
+              "</td></tr>";
+          }
+          dataTable.innerHTML = html;
+        }
+
+        // 学科设置
+        const disciplines = [
+          "教育学（国家重点培育学科）",
+          "数学、物理学、化学",
+          "生物学、地理学",
+          "中国语言文学",
+          "外国语言文学",
+          "体育学、艺术学",
+        ];
+
+        const discList = document.getElementById("disciplineList");
+        if (discList) {
+          let html = "";
+          for (let i = 0; i < disciplines.length; i++) {
+            html += "<li>" + disciplines[i] + "</li>";
+          }
+          discList.innerHTML = html;
+        }
+
+        // 师资队伍表格
+        const facultyData = [
+          { title: "正高级职称", count: "280", percent: "18.7%" },
+          { title: "副高级职称", count: "420", percent: "28.0%" },
+          { title: "中级职称", count: "600", percent: "40.0%" },
+          { title: "其他", count: "200", percent: "13.3%" },
+        ];
+
+        const facultyTable = document.getElementById("facultyTable");
+        if (facultyTable) {
+          let html = "";
+          for (let i = 0; i < facultyData.length; i++) {
+            const item = facultyData[i];
+            html +=
+              "<tr><td>" +
+              item.title +
+              "</td><td>" +
+              item.count +
+              "人</td><td>" +
+              item.percent +
+              "</td></tr>";
+          }
+          facultyTable.innerHTML = html;
+        }
+      });
+    </script>
+  </body>
+</html>

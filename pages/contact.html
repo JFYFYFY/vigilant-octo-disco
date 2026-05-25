@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>联系我们 - 江苏师范大学</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <!-- 顶部导航栏 -->
+    <header class="main-header">
+      <div class="header-container">
+        <!-- Logo区域 -->
+        <div class="logo-section">
+          <img
+            src="../images/logo.png"
+            alt="江苏师范大学校徽"
+            onerror="
+              this.style.background = 'linear-gradient(135deg,#0d47a1,#1565c0)';
+              this.style.display = 'flex';
+              this.style.alignItems = 'center';
+              this.style.justifyContent = 'center';
+              this.style.color = 'white';
+              this.style.fontSize = '20px';
+              this.textContent = '苏师大';
+            "
+          />
+          <div>
+            <h1 class="university-name">江苏师范大学</h1>
+            <p class="university-name-en">Jiangsu Normal University</p>
+          </div>
+        </div>
+
+        <!-- 导航菜单 -->
+        <nav class="main-nav">
+          <ul>
+            <li><a href="../index.html">首页</a></li>
+            <li><a href="about.html">学校概况</a></li>
+            <li><a href="motto.html">校训解读</a></li>
+            <li><a href="history.html">校史沿革</a></li>
+            <li><a href="admissions.html">招生信息</a></li>
+            <li><a href="news.html">新闻通知</a></li>
+            <li><a href="campus.html">校园风光</a></li>
+            <li><a href="contact.html" class="active">联系我们</a></li>
+          </ul>
+        </nav>
+
+        <!-- 当前时间 -->
+        <div class="current-time"></div>
+      </div>
+    </header>
+
+    <!-- 主内容 -->
+    <div class="container">
+      <!-- 联系方式总览 -->
+      <section>
+        <h2>联系方式</h2>
+        <div class="grid-3">
+          <article class="card text-center">
+            <div style="font-size: 48px; margin-bottom: 15px">📍</div>
+            <h3>学校地址</h3>
+            <p>江苏省徐州市铜山新区上海路101号</p>
+            <p><mark>泉山校区</mark></p>
+          </article>
+          <article class="card text-center">
+            <div style="font-size: 48px; margin-bottom: 15px">📞</div>
+            <h3>联系电话</h3>
+            <p>招生热线：<mark>0516-83403510</mark></p>
+            <p>总机：0516-83403000</p>
+          </article>
+          <article class="card text-center">
+            <div style="font-size: 48px; margin-bottom: 15px">✉️</div>
+            <h3>电子邮箱</h3>
+            <p>招生邮箱：<mark>zsb@jsnu.edu.cn</mark></p>
+            <p>校办邮箱：xiaoban@jsnu.edu.cn</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- 校区分布 -->
+      <section class="mt-20">
+        <h2>校区分布</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>校区名称</th>
+              <th>地址</th>
+              <th>主要功能</th>
+              <th>电话</th>
+            </tr>
+          </thead>
+          <tbody id="campusTable">
+            <!-- JS动态生成 -->
+          </tbody>
+        </table>
+      </section>
+
+      <!-- 主要部门联系方式 -->
+      <section class="mt-20">
+        <h2>主要部门联系方式</h2>
+        <div class="grid-4">
+          <article class="card">
+            <h3>招生相关</h3>
+            <ul>
+              <li><strong>本科招生办公室</strong></li>
+              <li>电话：0516-83403510</li>
+              <li>传真：0516-83403016</li>
+              <li>邮箱：zsb@jsnu.edu.cn</li>
+            </ul>
+            <ul style="margin-top: 15px">
+              <li><strong>研究生招生办公室</strong></li>
+              <li>电话：0516-83403088</li>
+              <li>邮箱：yzb@jsnu.edu.cn</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>学生事务</h3>
+            <ul>
+              <li><strong>学生工作处</strong></li>
+              <li>电话：0516-83403111</li>
+              <li>邮箱：xsc@jsnu.edu.cn</li>
+            </ul>
+            <ul style="margin-top: 15px">
+              <li><strong>就业指导中心</strong></li>
+              <li>电话：0516-83403222</li>
+              <li>邮箱：jyzdzx@jsnu.edu.cn</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>教学科研</h3>
+            <ul>
+              <li><strong>教务处</strong></li>
+              <li>电话：0516-83403333</li>
+              <li>邮箱：jwc@jsnu.edu.cn</li>
+            </ul>
+            <ul style="margin-top: 15px">
+              <li><strong>科技处</strong></li>
+              <li>电话：0516-83403444</li>
+              <li>邮箱：kjc@jsnu.edu.cn</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>行政事务</h3>
+            <ul>
+              <li><strong>校长办公室</strong></li>
+              <li>电话：0516-83403500</li>
+              <li>邮箱：xiaoban@jsnu.edu.cn</li>
+            </ul>
+            <ul style="margin-top: 15px">
+              <li><strong>人事处</strong></li>
+              <li>电话：0516-83403666</li>
+              <li>邮箱：rsc@jsnu.edu.cn</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- 在线留言 -->
+      <section class="mt-20">
+        <h2>在线留言</h2>
+        <article>
+          <form id="contactForm">
+            <div class="grid-2">
+              <div>
+                <label>您的姓名：</label>
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="请输入姓名"
+                  required
+                />
+              </div>
+              <div>
+                <label>联系电话：</label>
+                <input
+                  type="tel"
+                  name="phone"
+                  placeholder="请输入电话"
+                  required
+                />
+              </div>
+            </div>
+            <div class="grid-2 mt-15">
+              <div>
+                <label>电子邮箱：</label>
+                <input type="email" name="email" placeholder="请输入邮箱" />
+              </div>
+              <div>
+                <label>咨询类型：</label>
+                <select name="type" required>
+                  <option value="">请选择</option>
+                  <option value="招生咨询">招生咨询</option>
+                  <option value="学生事务">学生事务</option>
+                  <option value="教学科研">教学科研</option>
+                  <option value="合作交流">合作交流</option>
+                  <option value="意见建议">意见建议</option>
+                  <option value="其他">其他</option>
+                </select>
+              </div>
+            </div>
+            <div style="margin-top: 15px">
+              <label>留言内容：</label>
+              <textarea
+                name="message"
+                placeholder="请输入您的留言内容"
+                required
+              ></textarea>
+            </div>
+            <div style="margin-top: 20px; text-align: center">
+              <button type="submit">提交留言</button>
+              <button type="reset" style="margin-left: 15px; background: #666">
+                重置
+              </button>
+            </div>
+          </form>
+        </article>
+      </section>
+
+      <!-- 地理位置 -->
+      <section class="mt-20">
+        <h2>学校位置</h2>
+        <article class="card">
+          <div
+            style="
+              background: linear-gradient(135deg, #1a5f7a, #2d8f6f);
+              height: 300px;
+              border-radius: 8px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              color: white;
+              font-size: 24px;
+            "
+          >
+            <div style="text-align: center">
+              <p style="font-size: 48px; margin: 0">🗺️</p>
+              <p style="margin: 10px 0 0">徐州市铜山新区上海路101号</p>
+              <p style="font-size: 14px; opacity: 0.8">
+                泉山校区 · 云龙校区 · 奎园校区 · 贾汪校区
+              </p>
+            </div>
+          </div>
+          <p style="margin-top: 15px; text-align: center; color: #666">
+            <strong>交通指南：</strong
+            >乘坐徐州地铁2号线至江苏师范大学站，或乘坐11路、19路、36路、72路等公交车可达。
+          </p>
+        </article>
+      </section>
+
+      <!-- 微信公众号 -->
+      <section class="mt-20">
+        <h2>关注我们</h2>
+        <div class="grid-2">
+          <article class="card text-center">
+            <div
+              style="
+                width: 120px;
+                height: 120px;
+                background: #eee;
+                border-radius: 8px;
+                margin: 0 auto 15px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 48px;
+              "
+            >
+              📱
+            </div>
+            <h3>微信公众号</h3>
+            <p>江苏师范大学</p>
+            <p style="color: #666; font-size: 14px">获取更多校园资讯</p>
+          </article>
+          <article class="card text-center">
+            <div
+              style="
+                width: 120px;
+                height: 120px;
+                background: #eee;
+                border-radius: 8px;
+                margin: 0 auto 15px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 48px;
+              "
+            >
+              🌐
+            </div>
+            <h3>官方微博</h3>
+            <p>@江苏师范大学</p>
+            <p style="color: #666; font-size: 14px">实时更新校园动态</p>
+          </article>
+        </div>
+      </section>
+    </div>
+
+    <!-- 页脚 -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>联系方式</h4>
+          <p>地址：江苏省徐州市铜山新区上海路101号</p>
+          <p>电话：0516-83403510</p>
+          <p>邮箱：xznu@jsnu.edu.cn</p>
+        </div>
+        <div class="footer-section">
+          <h4>快速链接</h4>
+          <ul style="list-style: none; padding: 0">
+            <li><a href="about.html">学校概况</a></li>
+            <li><a href="admissions.html">招生信息</a></li>
+            <li><a href="contact.html">联系我们</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>关注我们</h4>
+          <p>微信公众号：江苏师范大学</p>
+          <p>微博：@江苏师范大学</p>
+        </div>
+        <div class="footer-section">
+          <h4>版权信息</h4>
+          <p>© 2024 @ jfy 所有</p>
+          <p>苏ICP备：XXXXXXXX号</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>崇德厚学 · 励志敏行 | 感谢您的访问</p>
+      </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // 校区表格数据
+        const campusData = [
+          {
+            name: "泉山校区",
+            address: "铜山新区上海路101号",
+            function: "主校区，行政、教学、科研中心",
+            phone: "0516-83403000",
+          },
+          {
+            name: "云龙校区",
+            address: "云龙区和平路57号",
+            function: "继续教育、职业教育",
+            phone: "0516-83803000",
+          },
+          {
+            name: "奎园校区",
+            address: "泉山区奎电路1号",
+            function: "附属中学、实验学校",
+            phone: "0516-85602000",
+          },
+          {
+            name: "贾汪校区",
+            address: "贾汪区前委路68号",
+            function: "应用技术学院",
+            phone: "0516-87706000",
+          },
+        ];
+
+        const campusTable = document.getElementById("campusTable");
+        if (campusTable) {
+          let html = "";
+          for (let i = 0; i < campusData.length; i++) {
+            const item = campusData[i];
+            html += "<tr>";
+            html += "<td><strong>" + item.name + "</strong></td>";
+            html += "<td>" + item.address + "</td>";
+            html += "<td>" + item.function + "</td>";
+            html += "<td>" + item.phone + "</td>";
+            html += "</tr>";
+          }
+          campusTable.innerHTML = html;
+        }
+
+        // 表单提交
+        const contactForm = document.getElementById("contactForm");
+        if (contactForm) {
+          contactForm.addEventListener("submit", function (e) {
+            e.preventDefault();
+            const formData = new FormData(this);
+            const name = formData.get("name");
+            const phone = formData.get("phone");
+            const email = formData.get("email");
+            const type = formData.get("type");
+            const message = formData.get("message");
+
+            if (name && phone && type && message) {
+              alert("感谢您的留言！我们将尽快与您联系。");
+              this.reset();
+            }
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
